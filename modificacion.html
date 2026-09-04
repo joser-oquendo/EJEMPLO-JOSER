@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tller evaluativo Rutas integradas</title>
+</head>
+<body bgcolor="#e9ecef">
+
+    <table align="center" width="800" border="0" cellpadding="10" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+
+                
+                <header>
+                    <table width="100%" border="0" cellpadding="10" bgcolor="#1b2a47">
+                        <tr>
+                            <td align="center">
+                                <h1><font color="#ffffff">GUÍA Y REGLAMENTO DE DEPORTES</font></h1>
+                                <p><font color="#ffffff">Aprende la dinámica, reglas e inscripción de las principales disciplinas</font></p>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+
+                <br>
+
+
+                <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                    <tr valign="top">
+                        
+                        
+                        <td width="65%">
+                        
+                            <main>
+
+                                
+                                <section id="como-se-juega">
+                                    <h2>1. ¿Cómo se juegan las disciplinas principales?</h2>
+                                    <p><b>Fútbol:</b> Dos equipos intentan meter el balón en el arco contrario usando solo los pies y la cabeza. El portero es el único que puede usar las manos dentro de su área.</p>
+                                    <p><b>Baloncesto:</b> Se juega encestando la pelota en un aro elevado a 3.05 metros. La pelota debe botarse contra el suelo para avanzar y los tiros valen 2 o 3 puntos según la distancia.</p>
+                                    <p><b>Tenis:</b> Se golpea una pelota con raqueta por encima de una red. El objetivo es lograr que el rival no pueda devolver la pelota dentro de las líneas del campo.</p>
+                                </section>
+
+                                <br>
+
+                                
+                                <section id="tabla-reglas">
+                                    <h2>2. Resumen de Formatos de Juego</h2>
+                                    
+                                    <table border="1" width="100%" cellpadding="6" cellspacing="0">
+                                        <colgroup>
+                                            <col bgcolor="#f0f0f0">
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                        
+                                            <tr bgcolor="#2b4c7e">
+                                                <th colspan="4"><font color="#ffffff">Reglamento y Tiempos de Juego</font></th>
+                                            </tr>
+                                            <tr bgcolor="#4a6fa5">
+                                                <th><font color="#ffffff">Categoría</font></th>
+                                                <th><font color="#ffffff">Deporte</font></th>
+                                                <th><font color="#ffffff">Duración</font></th>
+                                                <th><font color="#ffffff">Modo de victoria</font></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr id="item-001" align="center">
+                                                <!-- FUSIÓN 2: rowspan (Vertical) -->
+                                                <td rowspan="2"><b>Equipo</b></td>
+                                                <td>Fútbol</td>
+                                                <td>90 min (2 tiempos)</td>
+                                                <td>Mayor número de goles</td>
+                                            </tr>
+                                            <tr id="item-002" align="center">
+                                                <td>Baloncesto</td>
+                                                <td>40 min (4 cuartos)</td>
+                                                <td>Mayor número de puntos</td>
+                                            </tr>
+                                            <tr id="item-003" align="center">
+                                                <td><b>Individual</b></td>
+                                                <td>Tenis</td>
+                                                <td>Sin límite de tiempo</td>
+                                                <td>Ganar 2 de 3 Sets</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr bgcolor="#dbe2ef">
+                                                <td colspan="4" align="right"><b>Total de deportes explicados: 3</b></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </section>
+
+                                <br>
+
+                                
+                                <section id="campos">
+                                    <h2>3. Campos y Terrenos de Juego</h2>
+                                    <p><b>Cancha de Fútbol:</b> Superficie de césped de 100 metros de largo por 64 metros de ancho aproximadamente.</p>
+                                    <p><b>Cancha de Baloncesto:</b> Superficie maderada de 28 metros de largo por 15 metros de ancho.</p>
+                                    <p><b>Cancha de Tenis:</b> Pista de arcilla, césped o cemento de 23.77 metros de longitud.</p>
+                                </section>
+
+                            </main>
+                        </td>
+
+                        
+                        <td width="35%" bgcolor="#f1f3f5">
+                            
+                            <aside>
+                                <h3>Inscripción al Torneo</h3>
+                                <p>Selecciona los participantes a inscribir según el deporte explicativo:</p>
+
+                                <form action="/inscripcion" method="POST">
+                                    
+            
+
+                                    
+                                    <label for="req-001">Jugadores Fútbol<br>(ID: item-001):</label><br>
+                                    <input type="number" id="req-001" name="futbol" tabindex="2"><br><br>
+
+                            
+                                    <label for="req-002">Jugadores Baloncesto<br>(ID: item-002):</label><br>
+                                    <input type="number" id="req-002" name="baloncesto" tabindex="1"><br><br>
+
+                                    
+                                    <label for="req-003">Jugadores Tenis<br>(ID: item-003):</label><br>
+                                    <input type="number" id="req-003" name="tenis" tabindex="3"><br><br>
+
+                                    <input type="submit" value="Enviar Registro" tabindex="4">
+                                </form>
+                            </aside>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <br>
+
+            
+                <footer>
+                    <table width="100%" border="0" cellpadding="8" bgcolor="#1b2a47">
+                        <tr>
+                            <td align="center">
+                                <font color="#ffffff" size="2">
+                                    <p>&copy; 2026 Guía Deportiva - Taller Evaluativo Dashboard Relacional</p>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                </footer>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
