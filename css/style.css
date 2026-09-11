@@ -1,0 +1,114 @@
+/* Configuración general y centrado */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centrado general de contenedores */
+header, main, footer, nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header img {
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+/* Menú de navegación */
+table {
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 12px;
+}
+
+a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Estilos de las Secciones */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Diferenciación visual por sección */
+#futbol {
+    border-left: 6px solid #16a34a; /* Verde */
+}
+
+#baloncesto {
+    border-left: 6px solid #ea580c; /* Naranja */
+}
+
+#tenis {
+    border-left: 6px solid #ca8a04; /* Amarillo */
+}
+
+#natacion {
+    border-left: 6px solid #0284c7; /* Azul */
+}
+
+#atletismo {
+    border-left: 6px solid #dc2626; /* Rojo */
+}
+
+#beneficios {
+    background-color: #f0fdf4;
+    border-left: 6px solid #15803d;
+}
+
+#acerca {
+    background-color: #f8fafc;
+    border-left: 6px solid #475569;
+}
+
+#contacto {
+    background-color: #fefce8;
+    border-left: 6px solid #ca8a04;
+}
+
+/* Imágenes dentro de las secciones */
+section img {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Listas */
+ul {
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+    font-size: 14px;
+}
