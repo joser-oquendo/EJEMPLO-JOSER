@@ -11,305 +11,152 @@
 <body>
 
     <header>
-        <table >
-            <tr >
-                <td >
-                    <img src="LOGO.jpg" alt="Logo Deportes" width="150" height="80">
-                </td>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="LOGO.jpg" alt="Logo Deportes" id="logo-header" width="80" height="80">
+                <div class="header-title">
+                    <h1>EL MUNDO DE LOS DEPORTES</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="login.html" class="button-salir">Salir</a>
+            </div>
+        </div>
 
-                <td >
-                    <strong>EL MUNDO DE LOS DEPORTES</strong>
-                </td>
-            </tr>
-        </table>
+        <nav>
+            <a href="#futbol">⚽ Fútbol</a>
+            <a href="#baloncesto">🏀 Baloncesto</a>
+            <a href="#tenis">🎾 Tenis</a>
+            <a href="#natacion">🏊 Natación</a>
+            <a href="#atletismo">🏃 Atletismo</a>
+            <a href="#voleibol">🏐 Voleibol</a>
+            <a href="#beneficios">🥇 Beneficios</a>
+            <a href="#acerca">ℹ️ Acerca de</a>
+            <a href="#contacto">📞 Contacto</a>
+        </nav>
     </header>
-
-    <br>
-
-    <table >
-        <tr >
-
-            <td >
-                <a href="#futbol">⚽ Fútbol</a>
-            </td>
-
-            <td >
-                <a href="#baloncesto">🏀 Baloncesto</a>
-            </td>
-
-            <td >
-                <a href="#tenis">🎾 Tenis</a>
-            </td>
-
-            <td >
-                <a href="#natacion">🏊 Natación</a>
-            </td>
-
-            <td >
-                <a href="#atletismo">🏃 Atletismo</a>
-            </td>
-
-            <td >
-                <a href="#beneficios">🥇 Beneficios</a>
-            </td>
-
-            <td >
-                <a href="#acerca">ℹ️ Acerca de</a>
-            </td>
-
-            <td >
-                <a href="#contacto">📞 Contacto</a>
-            </td>
-
-        </tr>
-    </table>
-
-    <br>
 
     <main>
 
-        <table >
-            <tr>
-                <td >
+        <!-- CONTENEDOR EN GRID PARA LAS TARJETAS DE DEPORTES -->
+        <div class="tarjetas-grid">
 
-                    <!-- FÚTBOL -->
-                    <section id="futbol">
-                        <table >
-                            <tr>
-                                <td >
-                                    <h2>⚽ Fútbol</h2>
+            <!-- FÚTBOL -->
+            <section id="futbol" class="tarjeta">
+                <h2>⚽ Fútbol</h2>
+                <p>
+                    El fútbol es uno de los deportes más populares del mundo.
+                    Se juega entre dos equipos de once jugadores y el objetivo
+                    principal es marcar más goles que el equipo contrario
+                    introduciendo el balón en la portería rival.
+                </p>
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80" width="250" alt="Fútbol">
+            </section>
 
-                                    <p >
-                                        El fútbol es uno de los deportes más populares del mundo.
-                                        Se juega entre dos equipos de once jugadores y el objetivo
-                                        principal es marcar más goles que el equipo contrario
-                                        introduciendo el balón en la portería rival.
-                                    </p>
-                                </td>
+            <!-- BALONCESTO -->
+            <section id="baloncesto" class="tarjeta">
+                <h2>🏀 Baloncesto</h2>
+                <p>
+                    El baloncesto es un deporte dinámico en el que dos equipos de cinco jugadores intentan conseguir puntos encestando el
+                    balón en la canasta del equipo contrario, moviéndose mediante
+                    pases y botes de balón.
+                </p>
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80" width="250" alt="Baloncesto">
+            </section>
 
-                                <td >
-                                    <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80"
-                                         width="250"
-                                         alt="Fútbol">
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
+            <!-- TENIS -->
+            <section id="tenis" class="tarjeta">
+                <h2>🎾 Tenis</h2>
+                <p>
+                    El tenis puede jugarse de forma individual o en parejas.
+                    Los jugadores utilizan una raqueta para golpear una pelota
+                    por encima de una red central, buscando que el oponente no
+                    pueda devolverla dentro del campo.
+                </p>
+                <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=900&q=80" width="250" alt="Tenis">
+            </section>
 
-                    <br>
+            <!-- NATACIÓN -->
+            <section id="natacion" class="tarjeta">
+                <h2>🏊 Natación</h2>
+                <p>
+                    La natación es un deporte acuático completo de bajo impacto
+                    articular que consiste en desplazarse por el agua utilizando
+                    diferentes estilos técnicos como crol, espalda, braza y mariposa.
+                </p>
+                <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80" width="250" alt="Natación">
+            </section>
 
-                   
-                    <section id="baloncesto">
-                        <table >
-                            <tr>
-                                <td >
-                                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80"
-                                         width="250"
-                                         alt="Baloncesto">
-                                </td>
+            <!-- ATLETISMO -->
+            <section id="atletismo" class="tarjeta">
+                <h2>🏃 Atletismo</h2>
+                <p>
+                    El atletismo abarca diversas disciplinas divididas en carreras,
+                    saltos y lanzamientos. Considerado uno de los deportes más
+                    antiguos del mundo, pone a prueba la resistencia, velocidad
+                    y fuerza humana.
+                </p>
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" width="250" alt="Atletismo">
+            </section>
 
-                                <td >
-                                    <h2>🏀 Baloncesto</h2>
+            <!-- VOLEIBOL -->
+            <section id="voleibol" class="tarjeta">
+                <h2>🏐 Voleibol</h2>
+                <p>
+                    El voleibol se juega entre dos equipos separados por una red elevada.
+                    El objetivo es pasar el balón por encima de la red para que toque el suelo
+                    del campo contrario, evitando que el rival lo consiga en el propio.
+                </p>
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=900&q=80" width="250" alt="Voleibol">
+            </section>
 
-                                    <p >
-                                        El baloncesto es un deporte dinámico en el que dos equipos
-                                        de cinco jugadores intentan conseguir puntos encestando el
-                                        balón en la canasta del equipo contrario, moviéndose mediante
-                                        pases y botes de balón.
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
+        </div> <!-- /FIN DE TARJETAS-GRID -->
 
-                    <br>
+        <!-- BENEFICIOS -->
+        <section id="beneficios">
+            <h2>🥇 Beneficios de practicar deportes</h2>
+            <ul>
+                <li>Mejora la condición física y cardiovascular.</li>
+                <li>Ayuda a mantener un estilo de vida saludable.</li>
+                <li>Reduce drásticamente el estrés y la ansiedad.</li>
+                <li>Mejora la coordinación y la agilidad.</li>
+                <li>Fomenta el trabajo en equipo y la socialización.</li>
+                <li>Desarrolla la disciplina, enfoque y constancia.</li>
+            </ul>
+        </section>
 
-                    <section id="tenis">
-                        <table >
-                            <tr>
-                                <td >
-                                    <h2>🎾 Tenis</h2>
+        <!-- ACERCA DE -->
+        <section id="acerca">
+            <h2>ℹ️ Acerca de</h2>
+            <p>
+                Este sitio web está dedicado a promover los beneficios del
+                deporte y proporcionar información clara sobre las disciplinas
+                más practicadas a nivel mundial. Nuestro objetivo es inspirar
+                a personas de todas las edades a adoptar un estilo de vida
+                activo y saludable.
+            </p>
+        </section>
 
-                                    <p >
-                                        El tenis puede jugarse de forma individual o en parejas.
-                                        Los jugadores utilizan una raqueta para golpear una pelota
-                                        por encima de una red central, buscando que el oponente no
-                                        pueda devolverla dentro del campo.
-                                    </p>
-                                </td>
-
-                                <td >
-                                    <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=900&q=80"
-                                         width="250"
-                                         alt="Tenis">
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <br>
-
-                    <section id="natacion">
-                        <table >
-                            <tr>
-                                <td >
-                                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80"
-                                         width="250"
-                                         alt="Natación">
-                                </td>
-
-                                <td >
-                                    <h2>🏊 Natación</h2>
-
-                                    <p >
-                                        La natación es un deporte acuático completo de bajo impacto
-                                        articular que consiste en desplazarse por el agua utilizando
-                                        diferentes estilos técnicos como crol, espalda, braza y mariposa.
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <br>
-
-                
-                    <section id="atletismo">
-                        <table >
-                            <tr>
-                                <td >
-                                    <h2>🏃 Atletismo</h2>
-
-                                    <p >
-                                        El atletismo abarca diversas disciplinas divididas en carreras,
-                                        saltos y lanzamientos. Considerado uno de los deportes más
-                                        antiguos del mundo, pone a prueba la resistencia, velocidad
-                                        y fuerza humana.
-                                    </p>
-                                </td>
-
-                                <td >
-                                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
-                                         width="250"
-                                         alt="Atletismo">
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <br>
-
-                 
-                    <section id="beneficios">
-                        <table >
-                            <tr>
-                                <td >
-
-                                    <h2>🥇 Beneficios de practicar deportes</h2>
-
-                                    <table >
-                                        <tr>
-
-                                            <td >
-                                                <ul>
-                                                    <li>Mejora la condición física y cardiovascular.</li>
-                                                    <li>Ayuda a mantener un estilo de vida saludable.</li>
-                                                    <li>Reduce drásticamente el estrés y la ansiedad.</li>
-                                                </ul>
-                                            </td>
-
-                                            <td >
-                                                <ul>
-                                                    <li>Mejora la coordinación y la agilidad.</li>
-                                                    <li>Fomenta el trabajo en equipo y la socialización.</li>
-                                                    <li>Desarrolla la disciplina, enfoque y constancia.</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                    </table>
-
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <br>
-
-                    <section id="acerca">
-                        <table >
-                            <tr>
-                                <td >
-
-                                    <h2>ℹ️ Acerca de</h2>
-
-                                    <p >
-                                        Este sitio web está dedicado a promover los beneficios del
-                                        deporte y proporcionar información clara sobre las disciplinas
-                                        más practicadas a nivel mundial. Nuestro objetivo es inspirar
-                                        a personas de todas las edades a adoptar un estilo de vida
-                                        activo y saludable.
-                                    </p>
-
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <br>
-
-                    <section id="contacto">
-                        <table >
-                            <tr>
-                                <td >
-
-                                    <h2>📞 Contacto</h2>
-
-                                    <p >
-                                        Puedes comunicarte con nosotros en:
-                                    </p>
-
-                                    <ul>
-                                        <li>
-                                            <strong>Correo electrónico:</strong>
-                                            joser@lajoseroberto.edu.co
-                                        </li>
-
-                                        <li>
-                                            <strong>Teléfono:</strong>
-                                            3216225773
-                                        </li>
-                                    </ul>
-
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-
-                </td>
-            </tr>
-        </table>
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>📞 Contacto</h2>
+            <p>Puedes comunicarte con nosotros en:</p>
+            <ul>
+                <li>
+                    <strong>Correo electrónico:</strong> joser@lajoseroberto.edu.co
+                </li>
+                <li>
+                    <strong>Teléfono:</strong> 3216225773
+                </li>
+            </ul>
+        </section>
 
     </main>
 
-    <br>
-    <br>
-
-   
     <footer>
-        <table >
-            <tr>
-                <td >
-
-                    <p >
-                        © 2026 - Página informativa sobre deportes
-                    </p>
-
-                </td>
-            </tr>
-        </table>
+        <p>© 2026 - Página informativa sobre deportes</p>
     </footer>
 
 </body>
-</html>
 
+</html>
