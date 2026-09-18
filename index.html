@@ -10,38 +10,51 @@
 
 <body>
 
-    <header>
-        <div class="header-container">
-            <div class="header-left">
+   <header>
+    <div class="header-container">
+        
+        <div class="header-left">
+            <div class="logo-wrap">
                 <img src="LOGO.jpg" alt="Logo Deportes" id="logo-header" width="80" height="80">
-                <div class="header-title">
-                    <h1>EL MUNDO DE LOS DEPORTES</h1>
-                </div>
-            </div>
-            <div class="header-right">
-                <a href="login.html" class="button-salir">Salir</a>
+                <span class="insignia">Logo</span>
             </div>
         </div>
 
-        <nav>
-            <a href="#futbol">⚽ Fútbol</a>
-            <a href="#baloncesto">🏀 Baloncesto</a>
-            <a href="#tenis">🎾 Tenis</a>
-            <a href="#natacion">🏊 Natación</a>
-            <a href="#atletismo">🏃 Atletismo</a>
-            <a href="#voleibol">🏐 Voleibol</a>
-            <a href="#beneficios">🥇 Beneficios</a>
-            <a href="#acerca">ℹ️ Acerca de</a>
-            <a href="#contacto">📞 Contacto</a>
-        </nav>
-    </header>
+       <nav>
+    <ul>
+        
+        <li class="dropdown">
+            <a href="#" class="dropbtn">⚽ Deportes ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="#futbol">⚽ Fútbol</a></li>
+                <li><a href="#baloncesto">🏀 Baloncesto</a></li>
+                <li><a href="#tenis">🎾 Tenis</a></li>
+                <li><a href="#natacion">🏊 Natación</a></li>
+                <li><a href="#atletismo">🏃 Atletismo</a></li>
+                <li><a href="#voleibol">🏐 Voleibol</a></li>
+            </ul>
+        </li>
+
+        
+        <li><a href="#beneficios">🥇 Beneficios</a></li>
+        <li><a href="#acerca">ℹ️ Acerca de</a></li>
+        <li><a href="#contacto">📞 Contacto</a></li>
+    </ul>
+</nav>
+
+       
+        <div class="header-right">
+            <a href="login.html" class="button-salir">Salir</a>
+        </div>
+    </div>
+</header>
 
     <main>
 
-        <!-- CONTENEDOR EN GRID PARA LAS TARJETAS DE DEPORTES -->
+      
         <div class="tarjetas-grid">
 
-            <!-- FÚTBOL -->
+        
             <section id="futbol" class="tarjeta">
                 <h2>⚽ Fútbol</h2>
                 <p>
@@ -53,7 +66,7 @@
                 <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80" width="250" alt="Fútbol">
             </section>
 
-            <!-- BALONCESTO -->
+       
             <section id="baloncesto" class="tarjeta">
                 <h2>🏀 Baloncesto</h2>
                 <p>
@@ -64,7 +77,7 @@
                 <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80" width="250" alt="Baloncesto">
             </section>
 
-            <!-- TENIS -->
+       
             <section id="tenis" class="tarjeta">
                 <h2>🎾 Tenis</h2>
                 <p>
@@ -76,7 +89,7 @@
                 <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=900&q=80" width="250" alt="Tenis">
             </section>
 
-            <!-- NATACIÓN -->
+          
             <section id="natacion" class="tarjeta">
                 <h2>🏊 Natación</h2>
                 <p>
@@ -87,7 +100,7 @@
                 <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80" width="250" alt="Natación">
             </section>
 
-            <!-- ATLETISMO -->
+        
             <section id="atletismo" class="tarjeta">
                 <h2>🏃 Atletismo</h2>
                 <p>
@@ -99,7 +112,7 @@
                 <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" width="250" alt="Atletismo">
             </section>
 
-            <!-- VOLEIBOL -->
+          
             <section id="voleibol" class="tarjeta">
                 <h2>🏐 Voleibol</h2>
                 <p>
@@ -110,9 +123,9 @@
                 <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=900&q=80" width="250" alt="Voleibol">
             </section>
 
-        </div> <!-- /FIN DE TARJETAS-GRID -->
+        </div>
 
-        <!-- BENEFICIOS -->
+       
         <section id="beneficios">
             <h2>🥇 Beneficios de practicar deportes</h2>
             <ul>
@@ -125,7 +138,7 @@
             </ul>
         </section>
 
-        <!-- ACERCA DE -->
+     
         <section id="acerca">
             <h2>ℹ️ Acerca de</h2>
             <p>
@@ -137,7 +150,7 @@
             </p>
         </section>
 
-        <!-- CONTACTO -->
+    
         <section id="contacto">
             <h2>📞 Contacto</h2>
             <p>Puedes comunicarte con nosotros en:</p>
