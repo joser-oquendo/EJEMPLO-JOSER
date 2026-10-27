@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -176,6 +175,46 @@
 
     <!-- JavaScript Bundle de Bootstrap 5.3.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de la actividad de JavaScript -->
+    <script>
+        // 1. Configuración de variables y meta inicial
+        const metaVentas = 100000;
+        let ventasTotales = 0;
+
+        console.log("--- INICIO DE LA ACTIVIDAD: ACUMULADOR DE VENTAS DEPORTIVAS ---");
+
+        // 2. Ciclo 'for' para recorrer 7 días de ventas (adaptado para una tienda deportiva)
+        for (let dia = 1; dia <= 7; dia++) {
+            let ventaDia = dia * 15000; // Simulación de ventas diarias
+            ventasTotales += ventaDia;   // Uso del operador de asignación acumulativa (+=)
+            console.log(`Día ${dia}: Venta de $${ventaDia} | Total acumulado: $${ventasTotales}`);
+        }
+
+        // 3. Estructura condicional (if / else if / else) con 3 niveles
+        console.log("\n--- EVALUACIÓN DE LA META DE VENTAS ---");
+        if (ventasTotales >= metaVentas) {
+            console.log(`✅ Meta cumplida: $${ventasTotales} (Superó la meta de $${metaVentas})`);
+        } else if (ventasTotales >= metaVentas * 0.8) {
+            console.log(`⚠️ Casi alcanzas la meta: $${ventasTotales} acumulados. Estás cerca.`);
+        } else {
+            let falta = metaVentas - ventasTotales;
+            console.log(`❌ Falta para la meta: Te faltan $${falta} para llegar a $${metaVentas}.`);
+        }
+
+        // 4. Ciclo 'while' con contador para alcanzar una meta extra
+        const metaExtra = 500000;
+        let intentosExtra = 0;
+
+        console.log("\n--- BÚSQUEDA DE META EXTRA ---");
+        while (ventasTotales < metaExtra) {
+            ventasTotales += 50000;
+            intentosExtra++; // Incremento en 1 con el operador ++
+        }
+
+        console.log(`🎯 Meta extra de $${metaExtra} alcanzada!`);
+        console.log(`Monto final: $${ventasTotales} | Intentos/Días extra requeridos: ${intentosExtra}`);
+    </script>
 </body>
 
 </html>
